@@ -4,7 +4,7 @@ This repository tests the [Building a RESTful Web Service with Spring Boot Actua
 
 In general, the tutorial shows how to build a REST endpoint, called "hello-world" whith Spring Boot Actuator, that returns a JSON containing an auto-generated ID and a string informing "Hello, Stranger!" or "Hello, " + parameter name informed + "!". 
 
-To run the project, just execute any of the following commnad:
+To build and run the project, just execute any of the following commnad:
 
 
 > gradlew.bat clean build && java -jar build/libs/actuator-service-0.0.1.jar (Windows)<br>
@@ -19,10 +19,12 @@ Note that it has an optional parameter called name that can be supplied with the
 > http://localhost:8080/hello-world?name=Carlos
 
 The results of both above requests will be respectively:
+
 ```javascript
 {"id":1,"content":"Hello, Stranger!"}
 {"id":2,"content":"Hello, Carlos!"}
 ```
+
 The documentation produced by Springfox Swagger can be acessed either as a JSON through the link:
 
 > http://localhost:8080/v2/api-docs
